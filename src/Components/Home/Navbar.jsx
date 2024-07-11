@@ -27,7 +27,9 @@ const Navbar = (props) => {
     // Return the jsx 
     return(
         <Fragment> 
+            {/* Adding the navbar */}
             <nav className="mainNav">
+                {/* Adding the navbar container */}
                 <div className="navContainerDiv">
                     <nav className="leftNav">
                         <Link to="/"> Home </Link>
@@ -36,6 +38,7 @@ const Navbar = (props) => {
 
                     </nav>
 
+                    {/* Adding the right navbar */}
                     <nav className='rightNav'>
                         <div>
                             <input className="searchInputForm" type="search" placeholder='Search Category...' onChange={handleCategory}/> 
