@@ -1,0 +1,132 @@
+* {
+    margin: 0px; 
+    padding: 0px; 
+    font-family: 'Poppins';
+}
+.mainNav {
+    height: 4em;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+.navContainerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+.rightNav {
+    display: flex;
+    width: 2em;
+    margin-right: 20em;
+    justify-content: space-between;
+}
+.searchInputForm {
+    height: 38px;
+    padding-left: 1em;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+    border: 2px solid #a5a5cf;
+}
+.leftNav {
+    display: flex;
+    width: 24%;
+    justify-content: space-evenly;
+}
+.leftNav a {
+    text-decoration: none;
+    color: white;
+}
+.mainArticle {
+    display: grid;
+    padding: 4em;
+    align-items: center;
+    justify-items: center;
+}
+.imageProducts {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #f2f2f2;
+    border-radius: 11px;
+}
+
+.innerMainArticleDiv {
+    display: flex;
+    width: 50em;
+    border: 2px solid #e9e9e9;
+    margin-bottom: 1em;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-bottom: 7px;
+}
+.imageDiv {
+    width: 13em; 
+}
+.contentsDiv {
+    width: 37em;
+}
+.contentsDiv ul li {
+    list-style-type: none;
+    font-size: 13px;
+}
+.contentsDiv ul li .priceTagAndRating {
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+}
+
+.innerMainArticleDiv {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.innerMainArticleDiv.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .innerMainArticleDiv {
+        width: 22em;
+        border: 1px solid #f4f4f4a8; 
+        border-radius: 6px;
+    }
+    .mainNav {
+        width: 103%;
+    }
+    .contentsDivList {
+        padding-left: 9px;
+    }
+    .imageProducts {
+        height: 157px;
+        width: 134px;
+        border: 1px solid #f9f9f9;
+        border-radius: 11px;
+        box-shadow: 2px 1px 9px -9px;
+    }
+    .mainArticle {
+        padding: 1em;
+    }
+    .contentsDiv ul li {
+        font-size: 8px;
+    }
+    .contentsDiv ul li .priceTagAndRating {
+        width: 55%;
+    }
+    .leftNav {
+        display: none;
+    }
+    .searchInputForm {
+        width: 225px;
+        font-size: 12px;
+    }
+}
+
